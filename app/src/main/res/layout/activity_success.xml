@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/success_title_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="45dp"
+        android:text="Success!"
+        android:textColor="#051D0D"
+        android:textSize="@dimen/_38sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/success_image_imageView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/success_desc_textView_id"
+        app:layout_constraintStart_toStartOf="@+id/success_desc_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/success_desc_textView_id"
+        app:srcCompat="@drawable/success_male" />
+
+    <TextView
+        android:id="@+id/success_desc_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:text="Your password has been changed successfully!"
+        android:textColor="#605A65"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="@+id/success_title_textView_id"
+        app:layout_constraintStart_toStartOf="@+id/success_title_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/success_title_textView_id" />
+
+    <Button
+        android:id="@+id/success_login_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:text="Log in"
+        android:textColor="#fff"
+        android:textSize="@dimen/_17sdp"
+        android:background="@drawable/button_tow_background"
+        app:layout_constraintEnd_toEndOf="@+id/success_image_imageView_id"
+        app:layout_constraintStart_toStartOf="@+id/success_image_imageView_id"
+        app:layout_constraintTop_toBottomOf="@+id/success_image_imageView_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

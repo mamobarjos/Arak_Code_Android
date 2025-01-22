@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_ConstraintLayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/product_imageView_id"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:circularflow_defaultRadius="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_holder_virtical" />
+
+    <TextView
+        android:id="@+id/product_name_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@+id/product_imageView_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_desc_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+
+        android:fontFamily="@font/droid_arabic_kufi_regular"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/product_imageView_id"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_textView_id" />
+
+    <TextView
+        android:id="@+id/product_rate_text_textView_id"
+        style="@style/settingsTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:fontFamily="@font/droid_arabic_kufi_regular"
+        android:text="0.0"
+        android:maxLength="3"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_ratingBar_id"
+        app:layout_constraintStart_toEndOf="@+id/product_ratingBar_id"
+        app:layout_constraintTop_toTopOf="@+id/product_ratingBar_id" />
+
+    <TextView
+        android:id="@+id/product_new_price_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+
+        android:textColor="@color/orange_500"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_old_price_textView_id" />
+
+    <TextView
+        android:id="@+id/product_old_price_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/striking_text"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:foreground="@drawable/striking_text"
+
+        android:textColor="@color/gray_20"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/product_ratingBar_id"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="@color/orange_dark"
+        android:secondaryProgressTint="@color/orange_dark"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/product_imageView_id"
+        app:layout_constraintTop_toBottomOf="@+id/product_desc_textView_id"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_imageView_id" />
+
+    <!--<LinearLayout
+        android:id="@+id/product_edit_options_LinearLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <ImageView
+            android:id="@+id/product_remove_ImageView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_delete_red" />
+
+        <ImageView
+            android:id="@+id/product_view_ImageView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_eye" />
+
+        <ImageView
+            android:id="@+id/product_edit_ImageView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/edit_icon" />
+
+    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

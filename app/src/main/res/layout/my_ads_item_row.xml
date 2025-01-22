@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/my_ads_ConstraintLayout_id">
+
+
+    <ImageView
+        android:id="@+id/my_ads_ad_type_icon_imageView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/my_ads_ad_details_constraintLayout_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/my_ads_image_type_icon" />
+
+    <TextView
+        android:id="@+id/my_ads_ad_name_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/payWithWalletSummaryTitleStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintStart_toEndOf="@+id/my_ads_ad_type_icon_imageView_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/my_ads_ad_date_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#8B8B8B"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/my_ads_ad_name_textView_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/my_ads_ad_name_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_name_textView_id" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/my_ads_ad_details_constraintLayout_id"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/my_ads_ad_status_dot_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u2022"/>
+        <TextView
+            android:id="@+id/my_ads_ad_status_textView_id"
+            style="@style/adStatusStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+  />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/my_ads_ad_details_constraintLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_type_icon_imageView_id">
+
+        <TextView
+            android:id="@+id/my_ads_ad_type_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Ads Type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_reach_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Reach"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_type_title_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_number_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_reach_title_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_time_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_number_title_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_price_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_time_title_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_type_body_textView_id"
+            style="@style/adDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/my_ads_ad_type_title_textView_id"
+            app:layout_constraintStart_toEndOf="@+id/my_ads_ad_type_title_textView_id"
+            app:layout_constraintTop_toTopOf="@+id/my_ads_ad_type_title_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_reach_body_textView_id"
+            style="@style/adDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/my_ads_ad_type_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/my_ads_ad_type_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_type_body_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_current_reach_body_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="@+id/my_ads_ad_reach_body_textView_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/my_ads_ad_reach_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_type_body_textView_id"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_current_time_body_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="$9.99"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/my_ads_ad_price_body_textView_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/my_ads_ad_price_body_textView_id"
+            app:layout_constraintTop_toTopOf="@+id/my_ads_ad_price_body_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_number_body_textView_id"
+            style="@style/adDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/my_ads_ad_reach_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/my_ads_ad_reach_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_reach_body_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_time_body_textView_id"
+            style="@style/adDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/my_ads_ad_number_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/my_ads_ad_number_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_number_body_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_ad_price_body_textView_id"
+            style="@style/adDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/my_ads_ad_time_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/my_ads_ad_time_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_ad_time_body_textView_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

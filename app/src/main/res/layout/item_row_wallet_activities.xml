@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wallet_item_ConstraintLayout_id">
+
+    <ImageView
+        android:id="@+id/wallet_item_up_down_imageView_id"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallet_up_icon"
+
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/wallet_item_action_name_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/walletActionTitleTheme"
+        android:layout_marginStart="20dp"
+        android:text="Website Ads"
+        app:layout_constraintBottom_toBottomOf="@+id/wallet_item_up_down_imageView_id"
+        app:layout_constraintStart_toEndOf="@+id/wallet_item_up_down_imageView_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wallet_item_action_date_textView_id"
+        style="@style/walletActionDateTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="15 / 05 / 2021"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/wallet_item_action_name_textView_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/wallet_item_action_name_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/wallet_item_action_name_textView_id" />
+
+    <TextView
+        android:id="@+id/wallet_item_revenue_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/walletActionRevenueTheme"
+        android:drawableLeft="@drawable/wallet_minus_icon"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="8dp"
+        android:text="9.99 JOD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

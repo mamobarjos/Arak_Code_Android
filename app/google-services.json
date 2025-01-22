@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "559969284871",
+    "firebase_url": "https://arak-9b950-default-rtdb.firebaseio.com",
+    "project_id": "arak-9b950",
+    "storage_bucket": "arak-9b950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559969284871:android:c023911b078825d2bd4ba2",
+        "android_client_info": {
+          "package_name": "com.arakadds.arak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559969284871-tq58enlupll26iqh1dugokembeu2l8ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbPUOKw0zcO0Y04nHLi353t2YnnxkvyUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559969284871-tq58enlupll26iqh1dugokembeu2l8ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

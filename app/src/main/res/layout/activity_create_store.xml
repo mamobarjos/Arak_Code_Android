@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/create_store_cover_imageView_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/bink"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/create_store_profile_back_imageView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/create_store_cover_imageView_id"
+        app:layout_constraintTop_toTopOf="@+id/create_store_cover_imageView_id"
+        app:srcCompat="@drawable/back_blue_icon" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/create_store_profile_image_imageView_id"
+        android:layout_width="@dimen/_67sdp"
+        android:layout_height="@dimen/_67sdp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_placeholder"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/create_store_add_profile_image_imageView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_store_profile_image_imageView_id"
+        app:layout_constraintEnd_toEndOf="@+id/create_store_profile_image_imageView_id"
+        app:layout_constraintTop_toTopOf="@+id/create_store_profile_image_imageView_id"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_image_icon" />
+
+    <ImageView
+        android:id="@+id/create_store_add_cover_image_imageView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_image_icon" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/create_store_name_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:text="Store Information"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/create_store_name_EditeText_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:ems="10"
+                android:hint="Store Name"
+                android:padding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_name_textView_id" />
+
+
+            <EditText
+                android:id="@+id/create_store_desc_EditeText_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Description "
+                android:padding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_name_EditeText_id" />
+
+            <RelativeLayout
+                android:id="@+id/registeration_spinner_relativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_desc_EditeText_id">
+
+                <Spinner
+                    android:id="@+id/create_store_category_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/filter_background"
+                    android:gravity="center|left"
+                    android:hint="password"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/registeration_spinner_wrelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registeration_spinner_relativeLayout_id">
+
+                <Spinner
+                    android:id="@+id/create_store_country_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/filter_background"
+                    android:gravity="center|left"
+                    android:hint="password"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/registeration_spinner_3wrelativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registeration_spinner_wrelativeLayout_id">
+
+                <Spinner
+                    android:id="@+id/create_store_city_spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/filter_background"
+                    android:gravity="center|left"
+                    android:hint="password"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/ic_arrow_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/location_relativeLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registeration_spinner_3wrelativeLayout_id">
+
+                <TextView
+                    android:id="@+id/create_store_location_TextView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/filter_background"
+                    android:gravity="center|left"
+                    android:hint="Location"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/map_pin_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_relativeLayout_id">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_11sdp"
+                    app:ccpDialog_textColor="@color/gray"
+                    app:ccp_defaultNameCode="JO"
+                    app:ccp_showFlag="false"
+                    app:ccp_showFullName="false" />
+
+                <EditText
+                    android:id="@+id/create_store_phoneNumber_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="#00000000"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/create_store_whatsup_linearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/create_store_whatsup_ImageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/whatsup_transperant_icon" />
+
+                <EditText
+                    android:id="@+id/create_store_whatsup_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Phone Number"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/create_store_facebook_linearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_whatsup_linearLayout_id">
+
+                <ImageView
+                    android:id="@+id/create_store_facebook_ImageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/facebook_transperant_icon" />
+
+                <EditText
+                    android:id="@+id/create_store_facebook_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Add your link"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/create_store_instagram_linearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_facebook_linearLayout_id">
+
+                <ImageView
+                    android:id="@+id/create_store_instagram_ImageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/instagram_transperant_icon" />
+
+                <EditText
+                    android:id="@+id/create_store_instagram_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Add your link"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_store_youtube_linearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_instagram_linearLayout_id">
+
+                <ImageView
+                    android:id="@+id/create_store_youtube_ImageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/youtube_transperant_icon" />
+
+                <EditText
+                    android:id="@+id/create_store_youtube_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Add your link"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_store_website_linearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/filter_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_youtube_linearLayout_id">
+
+                <ImageView
+                    android:id="@+id/create_store_website_ImageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/website_transperant_icon" />
+
+                <EditText
+                    android:id="@+id/create_store_website_EditText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="Add your link"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_store_add_social_link_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/dots_background"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_website_linearLayout_id">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_gray_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:text="Add social link"
+                    android:textColor="@color/gray_500"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_store_continue_Button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_tow_background"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_store_add_social_link_LinearLayout_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

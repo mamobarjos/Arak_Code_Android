@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/settings_relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layoutDirection="ltr"
+            android:background="@drawable/tool_bar_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/settings_arrow_back_imageView_id"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/settings_title_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/settings_general_title_textView_id"
+            style="@style/settingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="48dp"
+            android:text="General"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_relativeLayout" />
+
+        <TextView
+            android:id="@+id/feedback_options_title_textView_id"
+            style="@style/settingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="40dp"
+            android:text="Feedback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_arabic_language_textView_id" />
+
+        <TextView
+            android:id="@+id/legal_potions_title_textView_id"
+            style="@style/settingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="40dp"
+            android:text="Legal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/need_help_LinearLayout_id" />
+
+        <LinearLayout
+            android:id="@+id/settings_notification_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_general_title_textView_id">
+
+            <ImageView
+                android:id="@+id/imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_notifications_icon" />
+
+            <TextView
+                android:id="@+id/notification_title_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Notifications" />
+
+            <Switch
+                android:id="@+id/notification_switch_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_notification_LinearLayout_id" />
+
+
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/terms_LinearLayout_id" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_us_LinearLayout_id" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feedback_LinearLayout_id" />
+
+
+        <LinearLayout
+            android:id="@+id/settings_biometric_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6">
+
+            <ImageView
+                android:id="@+id/biometric_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/biometric_icon" />
+
+            <TextView
+                android:id="@+id/biometric_title_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Enable Biometric Fingerprint" />
+
+            <Switch
+                android:id="@+id/biometric_switch_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/biomitreckview6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_biometric_LinearLayout_id" />
+
+
+        <LinearLayout
+            android:id="@+id/language_LinearLayout_id"
+            android:layout_width="376dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/biomitreckview6">
+
+            <ImageView
+                android:id="@+id/language_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_language_icon" />
+
+            <TextView
+                android:id="@+id/language_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Language" />
+
+            <ImageView
+                android:id="@+id/language_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/terms_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feedback_options_title_textView_id">
+
+            <ImageView
+                android:id="@+id/terms_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_terms_condition_icon" />
+
+            <TextView
+                android:id="@+id/terms_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Terms &amp; Condition" />
+
+            <ImageView
+                android:id="@+id/terms_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/about_us_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7">
+
+            <ImageView
+                android:id="@+id/about_us_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_about_us" />
+
+            <TextView
+                android:id="@+id/about_us_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="About us" />
+
+            <ImageView
+                android:id="@+id/about_us_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8">
+
+            <ImageView
+                android:id="@+id/feedback_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_feedback_icon" />
+
+            <TextView
+                android:id="@+id/feedback_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Feedback" />
+
+            <ImageView
+                android:id="@+id/feedback_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/need_help_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9">
+
+            <ImageView
+                android:id="@+id/need_help_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_need_help_icon" />
+
+            <TextView
+                android:id="@+id/need_help_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Need Help?" />
+
+            <ImageView
+                android:id="@+id/need_help_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/legal_potions_title_textView_id">
+
+            <ImageView
+                android:id="@+id/privacy_imageView_id"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/settings_privacy_id" />
+
+            <TextView
+                android:id="@+id/privacy_textView_id"
+                style="@style/payWithWalletSummaryTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingStart="10dp"
+                android:text="Privacy" />
+
+            <ImageView
+                android:id="@+id/privacy_ImageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.0"
+                app:srcCompat="@drawable/ic_arrow_forward" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_english_language_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+           style="@style/settingsLanguageStyle"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/language_LinearLayout_id"
+            app:layout_constraintStart_toStartOf="@+id/language_LinearLayout_id"
+            app:layout_constraintTop_toBottomOf="@+id/language_LinearLayout_id" />
+
+        <View
+            android:id="@+id/settings_english_language_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/gray"
+            android:visibility="gone"
+
+            app:layout_constraintEnd_toEndOf="@+id/settings_english_language_textView_id"
+            app:layout_constraintStart_toStartOf="@+id/settings_english_language_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/settings_english_language_textView_id" />
+
+        <View
+            android:id="@+id/settings_arabic_language_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/gray"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/settings_arabic_language_textView_id"
+            app:layout_constraintStart_toStartOf="@+id/settings_arabic_language_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/settings_arabic_language_textView_id" />
+
+        <TextView
+            android:id="@+id/settings_arabic_language_textView_id"
+            style="@style/settingsLanguageStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="عربي"
+
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/language_LinearLayout_id"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="@+id/language_LinearLayout_id"
+            app:layout_constraintTop_toBottomOf="@+id/settings_english_language_view_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

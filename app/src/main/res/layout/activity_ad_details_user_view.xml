@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--toolbar and header-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ad_details_user_view_RecyclerView_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_placeholder"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/ad_details_user_view_title_text_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/droid_arabic_kufi_bold"
+                android:text="Modern Furniture "
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/ad_details_user_view_RecyclerView_id"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_RecyclerView_id" />
+
+            <TextView
+                android:id="@+id/ad_details_user_view_description_body_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:inputType="textMultiLine"
+                android:text="a room in a home that's used for entertaining friends, talking, reading, or watching television. If you're a couch potato, you most likely spend lots of time in your living room. You can also call a living room a lounge, a sitting room, a front room, or a parlor."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_location_body_textView_id" />
+
+
+            <TextView
+                android:id="@+id/ad_details_user_view_location_body_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:inputType="textMultiLine"
+                android:text="Amman - Jordan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_title_text_textView_id" />
+
+            <TextView
+                android:id="@+id/ad_details_user_view_website_body_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/website_new_icon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/droid_arabic_kufi_regular"
+                android:gravity="center|left"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_description_body_textView_id" />
+
+            <TextView
+                android:id="@+id/ad_details_number_images_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="@drawable/overlay_packground"
+                app:layout_constraintBottom_toBottomOf="@+id/ad_details_user_view_RecyclerView_id"
+                app:layout_constraintEnd_toEndOf="@+id/ad_details_user_view_RecyclerView_id" />
+
+            <ImageView
+                android:id="@+id/ad_details_user_view_phone_call_imageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ad_details_user_view_whats_app_imageView_id"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_RecyclerView_id"
+                app:srcCompat="@drawable/phone_call_ellection_collection_icon" />
+
+            <ImageView
+                android:id="@+id/ad_details_user_view_whats_app_imageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ad_details_user_view_location_imageView_id"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_RecyclerView_id"
+                app:srcCompat="@drawable/whats_app_icon" />
+
+            <ImageView
+                android:id="@+id/ad_details_user_view_location_imageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_RecyclerView_id"
+                app:srcCompat="@drawable/location_icon" />
+
+            <TextView
+                android:id="@+id/ad_details_user_view_review_title_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Reviews"
+                android:textColor="@color/dark_blue"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_website_body_textView_id" />
+
+            <TextView
+                android:id="@+id/ad_details_user_view_view_all_TextView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="See all"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_website_body_textView_id" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ad_details_user_view_ads_reviews_RecyclerView_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/ad_details_user_view_add_review_LinearLayout_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_review_title_textView_id" />
+            <LinearLayout
+                android:id="@+id/ad_details_user_view_add_review_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/dots_background"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_details_user_view_ads_reviews_RecyclerView_id">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_gray_icon" />
+
+                <TextView
+                    android:id="@+id/ad_details_user_view_Feedback_Title_TextView_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:text="Add Review"
+                    android:textColor="@color/gray_500"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

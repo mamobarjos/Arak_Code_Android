@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/packages_ConstraintLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA">
+
+            <LinearLayout
+                android:id="@+id/number_reach_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight=".4"
+                    android:src="@drawable/icon_arrow_up" />
+
+                <TextView
+                    android:id="@+id/number_reach_textView_id"
+                    style="@style/packagesDetailsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="2,000 Reach"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/number_images_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/number_reach_LinearLayout_id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/number_reach_LinearLayout_id"
+                app:layout_constraintTop_toBottomOf="@+id/number_reach_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/image_icon_Image_view_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/icon_package_side_image" />
+
+                <TextView
+                    android:id="@+id/number_images_textView_id"
+                    style="@style/packagesDetailsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="1 Image" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/number_secounds_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/number_images_LinearLayout_id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/number_images_LinearLayout_id"
+                app:layout_constraintTop_toBottomOf="@+id/number_images_LinearLayout_id">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight=".5"
+                    android:src="@drawable/icon_clock_time"/>
+
+                <TextView
+                    android:id="@+id/number_secounds_textView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight=".1"
+                    style="@style/packagesDetailsStyle"
+                    android:text="5 Secounds"
+
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/package_price_textView_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/orange_dark"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number_secounds_LinearLayout_id"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <ImageView
+                android:id="@+id/custom_package_imageView_id"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_weight=".5"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39999998"
+                app:srcCompat="@drawable/ic_add" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

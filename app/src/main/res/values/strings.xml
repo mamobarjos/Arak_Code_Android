@@ -1,0 +1,494 @@
+<resources>
+    <string translatable="false" name="app_name">Arak</string>
+
+    <string name="facebook_app_id" translatable="false">320347669697458</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb320347669697458</string>
+    <string name="google_ad_mobe_id" translatable="false">ca-app-pub-7303745888048368~8949417589</string>
+
+    <!--for banner-->
+    <string name="google_ad_mobe_banner_id" translatable="false">ca-app-pub-7303745888048368/3134494481</string>
+    <!--for Interstitial-->
+    <string name="google_ad_mobe_Interstitial_id" translatable="false">ca-app-pub-4090726192636805/9295723638</string>
+
+    <!--for test banner-->
+    <string name="google_ad_mobe_test_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <!--for test Interstitial-->
+    <string name="google_ad_mobe_test_Interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <!--for test Native ad-->
+    <string name="google_ad_mobe_test_Native_ad_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="Your_GPS">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="map_key" translatable="false">AIzaSyBtJjD9Pnvd8x592yo5A5q9BW1wOUmP18c</string>
+
+    <string-array name="gender_array_en" translatable="false">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="gender_array_ar" translatable="false">
+        <item>الجنس</item>
+        <item>ذكر</item>
+        <item>انثى</item>
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_Store">Store</string>
+    <string name="title_add">Add</string>
+    <string name="title_arak_store">Arak Store</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="AD">AD</string>
+    <!--registration activity-->
+
+    <string name="registration_activity_title">Join Arak</string>
+    <string name="registration_activity_full_name">Full Name</string>
+    <string name="registration_activity_desc">Sign up today and enjoy adding your Ads and Stores.</string>
+    <string name="registration_activity_Business_Name">Business Name (Optional)</string>
+    <string name="registration_activity_email">Email</string>
+    <string name="registration_activity_password">Password</string>
+    <string name="registration_activity_Confirm_password">Confirm Password</string>
+    <string name="registration_activity_date_of_birth">Date Of Birth</string>
+    <string name="registration_activity_phone_number">Enter Phone Number</string>
+    <string name="registration_activity_Sign_up">Sign up</string>
+    <string name="registration_activity_Terms">By signing up, you agree to our Terms &amp; Conditions and Privacy Policy.</string>
+    <string name="registration_activity_Login_Facebook">Log in with Facebook</string>
+    <string name="registration_activity_have_wallet">Do you have a wallet?</string>
+    <string name="registration_activity_Login_gmail">Sign in with Google</string>
+    <string name="registration_activity_Have_account">Have an account? Log In</string>
+    <string name="registration_activity_or">or</string>
+    <string name="registration_activity_yes">Yes</string>
+    <string name="registration_activity_no">No</string>
+
+    <!--login activity-->
+    <string name="login_activity_welcome">Welcome</string>
+    <string name="login_activity_thousands_registered_members">Join us for free and be one of the thousands of registered members</string>
+    <string name="login_activity_email">email</string>
+    <string name="login_activity_password">password</string>
+    <string name="login_activity_Login">Log in</string>
+    <string name="login_activity_Login_guest">Login as a guest</string>
+    <string name="login_activity_Forget_password">Forget password?</string>
+    <string name="login_activity_Login_Facebook">Log in with Facebook</string>
+    <string name="login_activity_Login_Google">Sign in with Google</string>
+    <string name="login_activity_Sign_up">Don\'t have an account? Sign up</string>
+    <string name="login_activity_as_guest">Login as a guest</string>
+
+    <!--settings activity-->
+    <string name="settings_activity_settings">Settings</string>
+    <string name="settings_activity_General">General</string>
+    <string name="settings_activity_Notifications">Notifications</string>
+    <string name="settings_activity_Language">Language</string>
+    <string name="settings_activity_Feedback">Feedback</string>
+    <string name="settings_activity_terms">Terms &amp; Condition</string>
+    <string name="settings_activity_About_us">About us</string>
+    <string name="settings_activity_Need_Help">Need Help?</string>
+    <string name="settings_activity_Legal">Legal</string>
+    <string name="settings_activity_Privacy">Privacy</string>
+
+    <!--normal ads activity-->
+    <string name="normal_ads_activity_title">Paid Ads</string>
+
+    <!--home activity-->
+    <string name="home_activity_Add_Store">Add Your Store</string>
+    <string name="home_activity_home">Home</string>
+    <string name="home_activity_Wallet">Wallet</string>
+    <string name="home_activity_Stores">Stores</string>
+    <string name="home_activity_Products">Products</string>
+    <string name="home_activity_More">More</string>
+
+    <!--user intrest avtivity-->
+    <string name="user_intrest_title">Choose your interests</string>
+
+    <!--home frag-->
+    <string name="home_search">Search</string>
+    <string name="home_frag_search">Search videos,images and many more</string>
+    <string name="home_frag_Watched_Ads">Watched Ads</string>
+    <string name="home_frag_learn_more">Learn More</string>
+    <string name="home_frag_featured_ads">Featured ads</string>
+    <string name="home_frag_See_more">See more</string>
+    <string name="home_frag_Normal_ads">Normal ads</string>
+    <string name="home_frag_Suggestions_Stores">Suggestions Of Stores</string>
+    <string name="home_frag_filtration_options">Filtration Options</string>
+    <string name="home_frag_electoral_district">Electoral District</string>
+    <string name="home_frag_electoral_candidates">Candidates For Parliamentary Elections</string>
+
+    <!--wallet frag-->
+    <string name="wallet_frag_Earning">Earning</string>
+    <string name="wallet_frag_Withdraw">Withdraw</string>
+    <string name="wallet_frag_Make_An_Ad">Make An Ad</string>
+    <string name="wallet_frag_ACTIVITIES">ACTIVITIES</string>
+    <string name="wallet_frag_Enter_Coupon_Code">Enter Coupon Code</string>
+    <string name="wallet_frag_From">From</string>
+    <string name="wallet_frag_To">To</string>
+
+    <!--Cliq Activity-->
+    <string name="cliq_activity_title">Cliq</string>
+    <string name="cliq_activity_add_attachment">Add Attachment</string>
+    <string name="cliq_activity_desc">Please enter the deposit amount</string>
+    <string name="cliq_activity_save">Save</string>
+    <string name="cliq_activity_text_copied">Text Copied</string>
+    <string name="cliq_activity_no_text_to_copied">No text to copy</string>
+
+    <string name="cliq_activity_copied_Text">Copied Text</string>
+
+    <!--store frag-->
+    <string name="store_frag_Search_Stores">Search Stores</string>
+    <string name="store_frag_Search_in_Stores">Find your needs in stores</string>
+
+
+    <!--service frag-->
+    <string name="service_frag_Arak_Service">Arak Services</string>
+    <string name="service_frag_Arak_Ranking">Arak Ranking</string>
+
+
+    <!--profile frag-->
+    <string name="profile_frag_My_Detail">My Profile</string>
+    <string name="profile_frag_My_Ads">My Ads</string>
+    <string name="profile_frag_History">History</string>
+    <string name="profile_frag_My_Favorite">Favorite</string>
+    <string name="profile_frag_My_Store">My Store</string>
+    <string name="profile_frag_My_Products">My Products</string>
+    <string name="profile_frag_Change_Password">Change Password</string>
+    <string name="profile_frag_Logout">Logout</string>
+
+    <!--MyDetail activity-->
+    <string name="My_Detail_activity_save_changes">Save Changes</string>
+
+    <!--change Phone Number activity-->
+    <string name="change_Phone_Number_activity_Reset_Phone_Number">Reset Phone Number</string>
+    <string name="change_Phone_Number_activity_Please_enter_New_Phone_Number">Please Enter Your New Phone Number</string>
+    <string name="change_Phone_Number_activity_Please_enter_Current_Phone_Number">Please Enter Your Current Phone Number</string>
+    <string name="change_Phone_Number_activity_New_Phone_Number">New Phone Number</string>
+    <string name="change_Phone_Number_activity_Current_Phone_Number">Current Phone Number</string>
+
+    <!--forget password activity-->
+    <string name="forget_password_activity_Forget_Your_Password">Forget Your Password</string>
+    <string name="forget_password_activity_Reset_enter_email">Please enter your Phone Number</string>
+    <string name="forget_password_activity_Next">Next</string>
+    <string name="forget_password_activity_Back">Back</string>
+
+    <!--Code Verification activity-->
+    <string name="Code_Verification_activity_Almost_There">Almost There!</string>
+    <string name="Code_Verification_activity_Please_enter_ottp_number">Please enter the ottp number. The number has been sent to your phone</string>
+    <string name="Code_Verification_activity_second_left">remaining seconds</string>
+    <string name="Code_Verification_activity_Resend_Code">Resend Code</string>
+
+
+    <!--Ad Type activity-->
+    <string name="ad_type_activity_title">Ad Type</string>
+
+
+    <!--ElectionDetailsActivity-->
+    <string name="election_details_activity_governorate">Governorate</string>
+    <string name="election_details_activity_electoral_district">Electoral District</string>
+    <string name="election_details_activity_bloc_membership">Bloc Membership</string>
+
+    <!--rest password activity-->
+    <string name="rest_password_activity_Change_Your_Password">Change Your Password</string>
+    <string name="rest_password_activity_enter_new_password">Please enter a new password and confirm the password</string>
+    <string name="rest_password_activity_Submit">Submit</string>
+    <string name="rest_password_activity_confirm_password">confirm password</string>
+    <string name="rest_password_activity_current_password">current password</string>
+    <string name="rest_password_activity_new_password">new password</string>
+
+    <!--Category Packages activity-->
+    <string name="Category_Packages_activity_Image_Ads">Image Ads</string>
+    <string name="Category_Packages_activity_Video_Ads">Video Ads</string>
+    <string name="Category_Packages_activity_Website_Ads">Website Ads</string>
+    <string name="Category_Packages_activity_Stores">Stores</string>
+    <string name="Category_Packages_activity_Reach">Reach</string>
+    <string name="Category_Packages_activity_Image">Image</string>
+    <string name="Category_Packages_activity_JOD">JOD</string>
+    <string name="Category_Packages_activity_Seconds">Seconds</string>
+    <string name="Category_Packages_activity_Custom_Package">Custom Package</string>
+    <string name="Category_Packages_activity_Special_Service">Select Your Package &amp; Create Your Ad</string>
+
+    <!--no_internet_connection  activity-->
+    <string name="no_internet_connection_activity_title_label">No Internet Connection</string>
+    <string name="no_internet_connection_activity_desc_label">Please check your device\'s connection</string>
+    <string name="no_internet_connection_activity_try_again_label">Try Again</string>
+
+    <!--Create New Ad activity-->
+    <string name="Create_New_Ad_activity_Individual">Individual</string>
+    <string name="Create_New_Ad_activity_Company">Company</string>
+    <string name="Create_New_Ad_activity_Title">Title</string>
+    <string name="Create_New_Ad_activity_Company_Name">Company Name</string>
+    <string name="Create_New_Ad_activity_Description">Description</string>
+    <string name="Create_New_Ad_activity_Location">Location</string>
+    <string name="Create_New_Ad_activity_Continue">Continue</string>
+    <string name="Create_New_Ad_activity_Upload_Image">Upload Image</string>
+    <string name="Create_New_Ad_activity_Upload_Video">Upload Video</string>
+    <string name="Create_New_Ad_activity_Back_To_Ads">Back To Ads</string>
+    <string name="Create_New_Ad_activity_Website">Website</string>
+    <string name="Create_New_Ad_activity_Special">Special</string>
+
+    <!--New Ad Summery activity-->
+    <string name="Summery_activity_Summery">Summary</string>
+    <string name="Summery_activity_cart_details">cart details</string>
+    <string name="Summery_activity_total_amount">total amount</string>
+
+
+    <!--payment activity-->
+    <string name="payment_activity_check_out">Check Out</string>
+    <string name="payment_activity_My_Wallet">My Wallet</string>
+    <string name="payment_activity_Card">Card</string>
+    <string name="payment_activity_Ads_Type">Ads Type</string>
+    <string name="payment_activity_Number">Number</string>
+    <string name="payment_activity_Time">Time</string>
+    <string name="payment_activity_Video">Video</string>
+    <string name="payment_activity_Balance_Not_Enough">Balance Not Enough</string>
+    <string name="payment_activity_continue_with_credit">Would you like to continue with credit?</string>
+
+    <!--Success Activity-->
+    <string name="Success_activity_Success">Success!</string>
+    <string name="Success_activity_changed_successfully">Your password has been changed successfully!</string>
+    <string name="Success_activity_Continue_to_Profile">Continue to Profile</string>
+
+    <!--withdraw Activity-->
+    <string name="withdraw_activity_Withdraw">Withdraw</string>
+    <string name="withdraw_activity_Amount">Amount</string>
+    <string name="withdraw_activity_Wallet_Type">Choose Wallet or Bank</string>
+
+    <!--Ranking Activity-->
+    <string name="Ranking_activity_Ranking">Ranking</string>
+    <string name="Ranking_activity_Arak_Ranking">Arak Ranking</string>
+    <string name="Ranking_activity_Arak_Video">Video View</string>
+    <string name="Ranking_activity_Arak_Image">Image View</string>
+    <string name="Ranking_activity_Arak_Website">Website View</string>
+    <string name="Ranking_activity_Arak_Total">Total Revenue</string>
+
+    <!--ad story Activity-->
+    <string name="ad_story_activity_Learn_More">Learn More</string>
+
+    <!--my ads Activity-->
+    <string name="my_ads_activity_page_title">My Ads</string>
+    <string name="my_ads_activity_Ads_Type">Ads Type</string>
+    <string name="my_ads_activity_Reach">Reach</string>
+    <string name="my_ads_activity_Number">Number</string>
+    <string name="my_ads_activity_Time">Time</string>
+    <string name="my_ads_activity_Price">Price</string>
+    <string name="my_ads_activity_Date">Date</string>
+    <string name="my_ads_highlight_ad">Highlight This Ad</string>
+    <string name="my_ads_delete">Delete</string>
+    <string name="my_ads_edit">Edit</string>
+    <string name="my_ad_details_activity">Watch</string>
+    <!--ad details Activity-->
+    <string name="ad_details_phone_number">Phone Number</string>
+
+    <!--history Activity-->
+
+    <!--map Activity-->
+    <string name="map_activity_confirm">Confirm</string>
+
+    <!--favorites Activity-->
+
+    <!--custom package activity-->
+    <string name="custom_package_activity_Number_Reach">Number Of Reach</string>
+    <string name="custom_package_activity_Number_Image">Number Of Image</string>
+    <string name="custom_package_activity_Number_Seconds">Number Of Seconds</string>
+    <string name="custom_package_activity_Gender">Gender</string>
+    <string name="custom_package_activity_Country">Country</string>
+    <string name="custom_package_activity_City">City</string>
+    <string name="custom_package_activity_Total">Total:</string>
+
+    <!--notification activity-->
+    <string name="notification_activity_page_title">Notification</string>
+
+    <!--feedback activity-->
+    <string name="feedback_activity_feedback">Tell us what you think about Arak</string>
+    <string name="feedback_activity_inter_your_feedback">please enter your feedback here</string>
+
+    <!--store profile activity-->
+    <string name="store_profile_activity_member_since">Member since </string>
+    <string name="store_profile_activity_enter_Review">Please enter Your Review!</string>
+    <string name="store_profile_activity_rate_store">Please rate the store</string>
+    <string name="store_profile_activity_My_Products">My Products</string>
+    <string name="store_profile_activity_Store_Products">Store Products</string>
+    <string name="store_profile_activity_Store_Reviews">Reviews</string>
+    <string name="store_profile_activity_Add_Review">Add Review</string>
+    <string name="store_profile_activity_Enter_review">Enter your review...</string>
+    <string name="store_profile_activity_Arak">Arak</string>
+
+    <!--Create New product activity-->
+    <string name="Create_New_product_activity_Create_product">Create Product</string>
+    <string name="Create_New_product_activity_product_name">Product Name</string>
+    <string name="Create_New_product_activity_Price">Price</string>
+    <string name="Create_New_product_activity_Discount_value">Discount value</string>
+    <string name="Create_New_product_activity_create">Create</string>
+
+    <!--Create store activity-->
+    <string name="Create_store_activity_Store_name">Store Name</string>
+    <string name="Create_store_activity_facebook">Facebook</string>
+    <string name="Create_store_activity_Instagram">Instagram</string>
+    <string name="Create_store_activity_Twitter">Twitter</string>
+    <string name="Create_store_activity_LinkedIn">LinkedIn</string>
+    <string name="Create_store_activity_Snapchat">Snapchat</string>
+    <string name="Create_store_activity_Youtube">Youtube</string>
+
+    <!--main store activity-->
+    <string name="Create_store_activity_My_Store">My Store</string>
+    <string name="Create_store_activity_Add_product">Add a product</string>
+    <string name="Create_store_activity_My_Products">My Products</string>
+
+    <!--cart activity-->
+    <string name="cart_activity_Special_title">Cart</string>
+    <string name="cart_activity_Special_note">Special note</string>
+    <string name="cart_activity_note">Add your note for the order</string>
+    <string name="cart_activity_payment_summary">payment summary</string>
+    <string name="cart_activity_cart_total">cart total</string>
+    <string name="cart_activity_discount">discount</string>
+    <string name="cart_activity_tax">tax</string>
+    <string name="cart_activity_total_amount">total amount</string>
+    <string name="cart_activity_Place_order">Place order</string>
+
+    <!--Shipping Address activity-->
+    <string name="ShippingAddress_activity_title">Shipping Address</string>
+    <string name="ShippingAddress_activity_First_Name">First Name</string>
+    <string name="ShippingAddress_activity_Last_Name">Last Name</string>
+    <string name="ShippingAddress_activity_address">address</string>
+    <string name="ShippingAddress_activity_Choose_Payment">Choose Payment Method:</string>
+    <string name="ShippingAddress_activity_Place_Order">Place Order</string>
+
+    <!--Details Cart activity-->
+    <string name="Details_Cart_activity_title">Product Details</string>
+    <string name="Details_Cart_activity_Choose_Type">Choose Type:</string>
+    <string name="Details_Cart_activity_Quantity">Quantity:</string>
+    <string name="Details_Cart_activity_buyButton">Buy Now</string>
+
+    <!--product activity-->
+    <string name="Create_store_activity_Related_Products">Related Products</string>
+    <string name="Create_store_activity_View_All">See All</string>
+    <string name="Create_store_activity_Review">Review</string>
+    <string name="Create_store_activity_Social_media_accounts">Social media accounts</string>
+    <string name="Create_store_activity_Enter_Review">Enter your review for this service provider...</string>
+    <string name="Create_store_activity_Visit_Store">Visit Store</string>
+    <string name="favorite_button_description">Add to favorites</string>
+    <string name="share_button">share button</string>
+    <string name="back_button">back button</string>
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--error messages-->
+    <string name="error_messages_insert_your_current_password">Please insert your current password</string>
+    <string name="error_messages_insert_your_new_password">Please insert your new password</string>
+    <string name="error_messages_insert_confirm_your_new_password">Please confirm your new password</string>
+    <string name="error_messages_no_data_found">No results found</string>
+
+    <!--dialogs-->
+    <string name="dialogs_Uploading_wait">Uploading Please Wait...</string>
+    <string name="dialogs_Uploading_Sending">Sending Please Wait...</string>
+    <string name="dialogs_Select_Picture">Select Picture</string>
+    <string name="dialogs_receive_payment">You will receive the payment within 48 hours</string>
+    <string name="dialogs_Back_to_wallet">Back to wallet</string>
+    <string name="dialogs_Success">Success</string>
+    <string name="dialogs_alert">Alert</string>
+    <string name="dialogs_confirm">Ok</string>
+
+    <string name="dialogs_Social_media_links">Social media links</string>
+
+    <string name="dialogs_Contact_Info">Contact Info</string>
+    <string name="dialogs_advisors_intro_title">Service details</string>
+    <string name="dialogs_advisors_contact_you">Once the details below are completed, one of our expert advisors will contact you</string>
+    <string name="dialogs_advisors_intro">Transform your ideas into distinctive videos and animations for all social platforms,
+        management, software development and many other marketing services in support of our advertising campaigns.\n \n
+        Through the follow-up, one of the employees in the department concerned with this service will contact you as soon as possible.</string>
+    <string name="dialogs_Enter_Full_Name">Enter Full Name</string>
+    <string name="dialogs_Enter_Phone_Number">Enter Phone Number</string>
+    <string name="dialogs_Enter_email">Enter your Email</string>
+    <string name="dialogs_Send">Send</string>
+    <string name="dialogs_Continue">Continue</string>
+    <string name="dialogs_loading_wait">Loading Please Wait...</string>
+    <string name="dialogs_ad_post_soon">Your ad will be post soon.</string>
+    <string name="dialogs_store_created_successfully">Your store has been created successfully.</string>
+    <string name="dialogs_Product_created_successfully">Your Product has been created successfully.</string>
+    <string name="dialogs_Go_My_Ads">Go to My Ads</string>
+    <string name="dialogs_Go_My_Store">Go to My Store</string>
+    <string name="dialogs_Go_My_Products">Go to My Products</string>
+    <string name="dialogs_Payment_combined">Payment combined</string>
+    <string name="dialogs_Payment_combined_desc">In this type, payment using wallet and credit card is combined. Would you like to continue?</string>
+    <string name="dialogs_Payment_Available_Coupons">Available Coupons</string>
+    <string name="dialogs_Payment_Use">Use</string>
+    <string name="dialogs_Payment_purchase_coupon">Please contact us to purchase a coupon</string>
+    <string name="dialogs_Delete_entry">Delete review</string>
+    <string name="dialogs_delete_this_entry">Are you sure you want to delete your review?</string>
+    <string name="dialogs_Delete_Product">Delete Product</string>
+    <string name="dialogs_sure_to_delete_product">Are you sure you want to delete this product?</string>
+    <string name="dialogs_cancel">cancel</string>
+    <string name="dialogs_error">Error</string>
+    <string name="dialogs_sure_to_delete_ad">Are you sure you want to delete this Ad?</string>
+
+
+    <!--toast messages-->
+    <string name="toast_please_try_again_later">please try again later</string>
+    <string name="toast_please_Insert_valid_email_address">Please Insert a valid email address</string>
+    <string name="toast_Passwords_not_match">Sorry Your Password doesn\'t match</string>
+    <string name="toast_Select_Your_Gender">Please Select Your Gender</string>
+    <string name="toast_Insert_full_name">Please Insert your full name</string>
+    <string name="toast_Insert_email">Please Insert your email</string>
+    <string name="toast_Insert_password">Please Insert your password</string>
+    <string name="toast_Insert_product_price">Please Insert Product Price</string>
+    <string name="toast_Insert_confirm_password">Please Insert your confirm password</string>
+    <string name="toast_Insert_phone_number">Please Insert your phone number</string>
+    <string name="toast_fill_all_required_fields">Please fill in all required fields</string>
+    <string name="toast_password_length">Your password must be 6 characters or more</string>
+    <string name="toast_Created_successfully_waiting_review">Created successfully, waiting for review</string>
+    <string name="toast_Payment_failure">the Payment was failure ,please try again!</string>
+    <string name="toast_Insert_requested_amount">Please Insert the requested amount</string>
+    <string name="toast_Insert_full_phone_number">Please enter your full phone number</string>
+    <string name="toast_check_password_email">Please check your password or email</string>
+    <string name="toast_minimum_amount_withdrawal">We apologize, the minimum amount for withdrawal is 3 dinars</string>
+    <string name="toast_Thank_you">Thank you</string>
+    <string name="toast_Phone_Number_updated_successfully">Your Phone Number has been updated successfully</string>
+    <string name="toast_Password_updated_successfully">Your Password has been updated successfully</string>
+    <string name="toast_Insert_requested_promo_code">Please Insert your promo code</string>
+    <string name="toast_charged_successfully">Your balance has been charged successfully</string>
+    <string name="toast_check_promo_code">Please check your promo code and try again</string>
+    <string name="toast_insert_company_name">please insert your company name</string>
+    <string name="toast_check_phone_number">please check your phone number</string>
+    <string name="toast_add_media_post">please add some media to your post</string>
+    <string name="toast_fill_out_fields">please fill out the fields</string>
+    <string name="toast_sorry_cant_open_map">sorry you can\'t open map</string>
+    <string name="toast_uploaded_successfully">uploaded successfully</string>
+    <string name="toast_Failed_upload_Image">Failed to upload the Image</string>
+    <string name="toast_no_selected_Image">There\'s no selected Image</string>
+    <string name="toast_cant_upload_more_the_one_videos">sorry you can\'t upload more the one videos</string>
+    <string name="toast_sorry_your_video_must_not_longer">sorry your video must\'t be longer than</string>
+    <string name="toast_second">second</string>
+    <string name="toast_havent_picked_Image">You haven\'t picked Image</string>
+    <string name="toast_unable_current_location">unable to get current location</string>
+    <string name="toast_please_set_location_map">please set your location on the map</string>
+    <string name="toast_complete_rating">please complete the rating before submit</string>
+    <string name="toast_cant_upload_more">sorry you can\'t upload more than </string>
+    <string name="toast_cant_upload_more_one_Video">sorry you can\'t upload more than one Video</string>
+    <string name="toast_images"> images</string>
+    <string name="toast_check_website_url">Please check website url</string>
+    <string name="toast_website_not_valid">Sorry advertiser\'s website is not valid</string>
+    <string name="toast_Facebook_link_not_valid">Sorry Facebook link is not valid</string>
+    <string name="toast_instagram_link_not_valid">Sorry Instagram link is not valid</string>
+    <string name="toast_Twitter_link_not_valid">Sorry Twitter link is not valid</string>
+    <string name="toast_linkedin_link_not_valid">Sorry Linkedin link is not valid</string>
+    <string name="toast_Snapchat_link_not_valid">Sorry Snapchat link is not valid</string>
+    <string name="toast_youtube_link_not_valid">Sorry Youtube link is not valid</string>
+    <string name="toast_Thank_You">Thank You</string>
+    <string name="toast_phone_number_registered">Sorry, this phone number is already registered</string>
+    <string name="toast_sure_your_code_correct">Please make sure your code is correct</string>
+    <string name="toast_cant_complete_request">Sorry, can\'t complete your request in the meantime</string>
+    <string name="toast_sure_your_code_correct_and_phone_number_not_registered">Please make sure your code is correct and phone number not registered before</string>
+    <string name="toast_required_information">please provide all required information</string>
+    <!--Code Verification activity-->
+    <string name="toast_please_enter_OTP_Code">Please enter the verification code sent to your mobile number</string>
+    <string name="toast_sorry_advertiser_doset_address">This advertiser doesn\'t have physical location</string>
+    <string name="toast_sorry_advertiser_doset_website">This advertiser doesn\'t have website</string>
+    <string name="toast_login_with_account">this action required to login with account</string>
+    <string name="toast_Type_store_name">Please Type store name</string>
+    <string name="toast_Type_store_description">Please Type store description</string>
+    <string name="toast_Type_store_valid_website">Please enter a valid website</string>
+    <string name="toast_Type_store_phone_number">Please Type store phone number</string>
+    <string name="toast_Type_store_cover_Image">Please set store cover Image</string>
+    <string name="toast_Type_store_profile_Image">Please set store profile Image</string>
+    <string name="toast_Type_store_location">Please set store location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

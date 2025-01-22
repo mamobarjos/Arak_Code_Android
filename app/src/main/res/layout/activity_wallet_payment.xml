@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar and header-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/toolbar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="70dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/wallet_icon_for_fragment_medim_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/wallet_pay_wallet_balance_textView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="0.00 JOD"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                <TextView
+                    android:id="@+id/wallet_pay_Earning_textView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Earning"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/wallet_pay_wallet_balance_textView_id"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_pay_wallet_balance_textView_id"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_pay_wallet_balance_textView_id"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/wallet_pay_total_amount_header_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="29dp"
+                android:text="total amount"
+                android:textColor="@color/dark_blue"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/wallet_pay_check_out_button_id"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/wallet_pay_credit_details_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:text="cart details"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/wallet_pay_total_amount_header_textView_id"
+                app:layout_constraintEnd_toEndOf="@+id/wallet_pay_total_amount_header_textView_id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/wallet_pay_total_amount_header_textView_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/wallet_pay_total_amount_body_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="29dp"
+                android:text="JOD 0.0"
+                android:textColor="@color/dark_blue"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/wallet_pay_check_out_button_id"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/wallet_pay_check_out_button_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/wallet_pay_check_out_button_id"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_shape"
+                android:text="Pay JOD 0.0"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/wallet_pay_ad_type_title_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:text="Ads Type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+        <TextView
+            android:id="@+id/wallet_pay_ad_reach_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:text="Reach"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_ad_type_title_textView_id" />
+
+        <TextView
+            android:id="@+id/wallet_pay_number_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:text="Number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_ad_reach_title_textView_id" />
+
+        <TextView
+            android:id="@+id/wallet_pay_time_title_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:text="Time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_number_title_textView_id" />
+
+        <TextView
+            android:id="@+id/wallet_pay_ad_type_body_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/payWithWalletSummaryBodyStyle"
+            android:layout_marginStart="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_pay_ad_type_title_textView_id"
+            app:layout_constraintStart_toEndOf="@+id/wallet_pay_ad_type_title_textView_id"
+            app:layout_constraintTop_toTopOf="@+id/wallet_pay_ad_type_title_textView_id" />
+
+        <TextView
+            android:id="@+id/wallet_pay_reach_body_textView_id"
+            style="@style/payWithWalletSummaryBodyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_pay_ad_reach_title_textView_id"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_pay_ad_type_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/wallet_pay_ad_type_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_ad_type_body_textView_id"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/wallet_pay_number_body_textView_id"
+            style="@style/payWithWalletSummaryBodyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_pay_number_title_textView_id"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_pay_reach_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/wallet_pay_reach_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_reach_body_textView_id"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/wallet_pay_time_body_textView_id"
+            style="@style/payWithWalletSummaryBodyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_pay_time_title_textView_id"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_pay_number_body_textView_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/wallet_pay_number_body_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/wallet_pay_number_body_textView_id"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/store_relativeLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tool_bar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/frameLayoutcart"
+            android:src="@drawable/small_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayoutcart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frameLayoutcart" />
+
+
+        <FrameLayout
+            android:id="@+id/frameLayoutcart"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayoutnot"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayoutnot"
+            app:layout_constraintTop_toTopOf="@+id/frameLayoutnot">
+
+            <ImageView
+                android:id="@+id/home_cart_imageView_id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:contentDescription="99"
+                android:src="@drawable/cart_icon" />
+
+            <TextView
+                android:id="@+id/cart_counter_TextView_id"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/counter_background"
+                android:fontFamily="@font/droid_arabic_kufi_regular"
+                android:gravity="center"
+                android:minWidth="24dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Notification Icon with Counter -->
+        <FrameLayout
+            android:id="@+id/frameLayoutnot"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_notification_imageView_id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:contentDescription="99"
+                android:src="@drawable/notifications_icon" />
+
+            <TextView
+                android:id="@+id/notification_counter_TextView_id"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/counter_background"
+                android:fontFamily="@font/droid_arabic_kufi_regular"
+                android:gravity="center"
+                android:minWidth="24dp"
+
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!--  <ImageView
+              android:id="@+id/"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="21dp"
+              android:layout_marginEnd="@dimen/_10sdp"
+              android:layout_toStartOf="@+id/home_settings_imageView_id"
+              android:src="@drawable/notifications_icon" />-->
+
+        <!-- <TextView
+             android:id="@+id/home_notification_counter_TextView_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/home_notification_imageView_id"
+             android:layout_alignTop="@+id/home_notification_imageView_id"
+             android:layout_alignEnd="@+id/home_notification_imageView_id"
+             android:layout_alignBottom="@+id/home_notification_imageView_id"
+             android:layout_marginStart="13dp"
+             android:layout_marginTop="-2dp"
+             android:layout_marginEnd="-6dp"
+             android:layout_marginBottom="13dp"
+             android:visibility="gone"
+             android:background="@drawable/counter_backgground"
+             android:gravity="center"
+             android:text="10"
+             android:textColor="@color/white" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/search_feild_background"
+        android:drawableLeft="@drawable/ic_search"
+        android:hint="Search"
+        android:paddingStart="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/store_relativeLayout_id" />
+
+
+    <!-- Horizontal Category RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxHeight="@dimen/_80sdp"
+        android:minHeight="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar" />
+
+    <!-- Product Section Header -->
+    <TextView
+        android:id="@+id/productsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Products"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryRecyclerView" />
+
+    <!-- Products Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productsLabel"
+        app:spanCount="2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

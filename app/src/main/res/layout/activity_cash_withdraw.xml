@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar and header-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/toolbar" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/withdraw_wallet_balance_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="0.0JOD"
+            android:textColor="#000"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/withdraw_Earning_textView_id"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_Earning_textView_id" />
+
+        <ImageView
+            android:id="@+id/withdraw_wallet_image_imageView_id"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar_layout"
+            app:srcCompat="@drawable/wallet_orang_icon" />
+
+        <TextView
+            android:id="@+id/withdraw_Earning_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Earning"
+            android:textColor="#BDBDBD"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toEndOf="@+id/withdraw_wallet_image_imageView_id"
+            app:layout_constraintTop_toTopOf="@+id/withdraw_wallet_image_imageView_id" />
+
+        <TextView
+            android:id="@+id/withdraw_label_textView_id"
+            style="@style/walletBalanceStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Withdraw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_wallet_image_imageView_id" />
+
+        <TextView
+            android:id="@+id/withdraw_amount_label_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Amount"
+            android:textColor="#BDBDBD"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_label_textView_id" />
+
+
+        <LinearLayout
+            android:id="@+id/withdraw_amount_linearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="34dp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_amount_label_textView_id">
+
+            <EditText
+                android:id="@+id/withdraw_amount_EditText_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cash_with_drow_tow_radios_left_view_background"
+                android:hint="Amount"
+                android:inputType="number"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+            <TextView
+                android:id="@+id/withdraw_currency_TextView_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cash_with_drow_tow_radios_right_view_background"
+                android:gravity="center"
+                android:textColor="#010101"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/withdraw_name_label_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            android:textColor="#1B245C"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/withdraw_amount_linearLayout_id"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_amount_linearLayout_id" />
+
+        <TextView
+            android:id="@+id/withdraw_phone_number_label_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Phone Number"
+            android:textColor="#1B245C"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/withdraw_Name_EditText_id"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_Name_EditText_id" />
+
+        <TextView
+            android:id="@+id/withdraw_wallet_type_label_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Wallet Type"
+            android:textColor="#1B245C"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/withdraw_phone_number_LinearLayout_id"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_phone_number_LinearLayout_id" />
+
+        <EditText
+            android:id="@+id/withdraw_Name_EditText_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/cash_with_drow_view_gray_background"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_name_label_textView_id" />
+
+        <LinearLayout
+            android:id="@+id/withdraw_phone_number_LinearLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="34dp"
+            android:layoutDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_phone_number_label_textView_id">
+
+            <TextView
+                android:id="@+id/withdraw_country_code_TextView_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/cash_with_drow_tow_radios_left_view_background"
+                android:gravity="center"
+                android:textColor="#787575"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/withdraw_phone_number_EditText_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/cash_with_drow_tow_radios_right_view_background"
+                android:ems="10"
+                android:layout_weight="1"
+                android:hint="xxxxxxxxx"
+                android:maxLength="9"
+                android:inputType="phone"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/withdraw_wallet_type_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/cash_with_drow_view_gray_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_wallet_type_label_textView_id" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/withdraw_wallet_Continue_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_tow_background"
+            android:text="Continue"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withdraw_wallet_type_spinner_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

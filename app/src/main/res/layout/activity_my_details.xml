@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAFAFA">
+
+    <!--toolbar and header-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_user_image_imageView_id"
+                    android:layout_width="111dp"
+                    android:layout_height="89dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder"
+                    app:civ_border_color="#FFFFFFFF"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/profile_edit_user_image_imageView_id"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@drawable/edit_profile_picture"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_user_image_imageView_id"
+                    app:layout_constraintEnd_toEndOf="@+id/profile_user_image_imageView_id" />
+
+                <TextView
+                    android:id="@+id/profile_user_name_textView_id"
+                    style="@style/arakServicesStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/profile_user_image_imageView_id"
+                    app:layout_constraintStart_toStartOf="@+id/profile_user_image_imageView_id"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_user_image_imageView_id" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/profile_frag_title_imageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:text="My Profile"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <LinearLayout
+                android:id="@+id/my_details_name_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_frag_title_imageView_id">
+
+                <ImageView
+                    android:id="@+id/my_details_name_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_icon" />
+
+                <EditText
+                    android:id="@+id/my_details_name_EditText_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+                <ImageView
+                    android:id="@+id/my_details_name_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.0"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/edit_icon" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_name_LinearLayout_id" />
+
+            <LinearLayout
+                android:id="@+id/my_details_birthdate_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_name_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_email_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_birthdate_TextView_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+                <ImageView
+                    android:id="@+id/my_details_email_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.0"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/edit_icon" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_birthdate_LinearLayout_id" />
+
+
+            <LinearLayout
+                android:id="@+id/my_details_company_name_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_birthdate_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_company_name_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/ic_business_icon" />
+
+                <EditText
+                    android:id="@+id/my_details_busniess_name_EditText_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+                <ImageView
+                    android:id="@+id/my_details_location_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.0"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/edit_icon" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/comapny_name_View_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_company_name_LinearLayout_id" />
+
+            <LinearLayout
+                android:id="@+id/my_details_country_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_company_name_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_country_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_location_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_country_TextView_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/country_View_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_country_LinearLayout_id" />
+
+            <LinearLayout
+                android:id="@+id/my_details_city_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_country_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_city_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_location_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_city_TextView_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/city_View_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_city_LinearLayout_id" />
+
+            <LinearLayout
+                android:id="@+id/my_details_gender_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_city_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_gender_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_gender_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_gender_textView_id"
+                    style="@style/ProfileTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
+
+                <ImageView
+                    android:id="@+id/my_details_gender_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.0"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/edit_icon" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/gender_View_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_gender_LinearLayout_id" />
+
+
+            <LinearLayout
+                android:id="@+id/my_details_phone_number_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_gender_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_phone_number_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_phone_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_phone_number_TextView_id"
+                    style="@style/payWithWalletSummaryTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Phone Number" />
+
+                <ImageView
+                    android:id="@+id/my_details_phone_number_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.0"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_arrow_forward" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_phone_number_LinearLayout_id" />
+
+
+            <LinearLayout
+                android:id="@+id/my_details_password_LinearLayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_phone_number_LinearLayout_id">
+
+                <ImageView
+                    android:id="@+id/my_details_password_imageView_id"
+                    android:layout_width="25dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.0"
+                    app:srcCompat="@drawable/my_details_change_password_icon" />
+
+                <TextView
+                    android:id="@+id/my_details_password_TextView_id"
+                    style="@style/payWithWalletSummaryTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Change Password" />
+
+                <ImageView
+                    android:id="@+id/my_details_password_ImageView_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="0.0"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_arrow_forward" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/password_View_id"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_details_password_LinearLayout_id" />
+
+
+            <Button
+                android:id="@+id/my_details_save_changes_Button_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/button_shape"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/my_details_password_LinearLayout_id"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="@+id/my_details_password_LinearLayout_id"
+                app:layout_constraintTop_toBottomOf="@+id/password_View_id" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

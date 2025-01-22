@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/display_full_screen_image_ViewPager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager.widget.ViewPager>
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/display_full_screen_image_DotsIndicator_id"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="#8c000029"
+        app:dotsColor="#9D9EA3"
+        app:dotsSize="15dp"
+        app:dotsSpacing="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/display_full_screen_image_ViewPager_id"
+        app:layout_constraintEnd_toEndOf="@+id/display_full_screen_image_ViewPager_id"
+        app:layout_constraintStart_toStartOf="@+id/display_full_screen_image_ViewPager_id"
+        app:progressMode="true"
+        app:selectedDotColor="#FFFFFF" />
+
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/display_full_screen_image_imageView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/display_full_screen_image_exit_imageView_id"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

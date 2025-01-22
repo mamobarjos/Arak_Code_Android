@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Arak" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--&lt;!&ndash; Primary brand color. &ndash;&gt;-->
+        <item name="colorPrimary">@color/orange_dark</item>
+        <item name="colorPrimaryVariant">@color/orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/light_black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+
+
+
+     <string name="bold" translatable="false">Open Sans Bold.ttf</string>
+     <string name="regular" translatable="false">Open Sans.ttf</string>
+
+
+     <string name="calendar_bold" translatable="false">Open Sans Bold.ttf</string>
+     <string name="calendar_regular" translatable="false">Open Sans.ttf</string>
+</resources>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar Section -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_relativeLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tool_bar_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_logo_imageView_id"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/small_logo"
+                android:contentDescription="Application logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutcart"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/home_cart_imageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:contentDescription="Cart icon with items"
+                    android:src="@drawable/cart_icon" />
+
+                <TextView
+                    android:id="@+id/cart_counter_TextView_id"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="end|top"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/counter_background"
+                    android:fontFamily="@font/droid_arabic_kufi_regular"
+                    android:gravity="center"
+                    android:minWidth="24dp"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Notification Icon with Counter -->
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/home_notification_imageView_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:contentDescription="Notification icon with alerts"
+                    android:src="@drawable/notifications_icon" />
+
+                <TextView
+                    android:id="@+id/notification_counter_TextView_id"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="end|top"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/counter_background"
+                    android:fontFamily="@font/droid_arabic_kufi_regular"
+                    android:gravity="center"
+                    android:minWidth="24dp"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Profile Content Section -->
+        <TextView
+            android:id="@+id/profile_my_details_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/my_details_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="My Details"
+            android:contentDescription="View and edit your personal details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_relativeLayout_id" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_my_details_textView_id" />
+
+        <TextView
+            android:id="@+id/my_ads_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/my_ads_details"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="My Ads"
+            android:contentDescription="View and manage your advertisements"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_ads_textView_id" />
+
+        <TextView
+            android:id="@+id/store_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/my_store_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="My Store"
+            android:contentDescription="View and manage your store"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/store_textView_id" />
+
+        <TextView
+            android:id="@+id/Favorite_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/my_favorite_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="Favorite"
+            android:contentDescription="View your favorite items"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Favorite_textView_id" />
+
+        <TextView
+            android:id="@+id/history_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/history_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="History"
+            android:contentDescription="View your transaction history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_textView_id" />
+
+        <TextView
+            android:id="@+id/settings_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/settings_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="Settings"
+            android:contentDescription="Adjust application settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_textView_id" />
+
+        <TextView
+            android:id="@+id/arak_services_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/arak_service_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="Arak services"
+            android:contentDescription="Access Arak services"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view20" />
+
+        <View
+            android:id="@+id/view22"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/gray_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arak_services_textView_id" />
+
+        <TextView
+            android:id="@+id/logout_textView_id"
+            style="@style/payWithWalletSummaryTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/logout_icon"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:text="Logout"
+            android:contentDescription="Log out of your account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view22" />
+
+        <!-- AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-7303745888048368/5111776788"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logout_textView_id" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

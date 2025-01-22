@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/code_verification_title_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="45dp"
+        android:text="Almost There!"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_26sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/code_verification_desc_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Please enter the ottp number. The number has been sent to your email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_verification_title_textView_id" />
+
+    <!--  <com.chaos.view.PinView
+          android:id="@+id/code_verification_desc_editText_id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="45dp"
+          android:layout_marginTop="32dp"
+          android:layout_marginEnd="45dp"
+          android:inputType="number"
+          android:textColor="@color/verf_number_color"
+          android:textSize="40sp"
+          app:bottomLineHeight="2dp"
+          app:bottomLineNormalColor="@color/orange_dark"
+          app:bottomLineSelectedColor="@color/orange_dark"
+          app:figures="4"
+          app:layout_constraintEnd_toEndOf="@+id/code_verification_desc_textView_id"
+          app:layout_constraintHorizontal_bias="0.685"
+          app:layout_constraintStart_toStartOf="@+id/code_verification_desc_textView_id"
+          app:layout_constraintTop_toBottomOf="@+id/code_verification_desc_textView_id"
+          app:selectedBackgroundColor="@color/white" />-->
+
+    <com.chaos.view.PinView
+        android:id="@+id/code_verification_desc_editText_id"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/verf_number_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/orange_dark"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="15dp"
+        app:itemWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_verification_desc_textView_id"
+        app:lineColor="@color/orange_dark"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <!--app:verCodeMargin="10dp"-->
+    <TextView
+        android:id="@+id/code_verification_counter_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:text="13 second left"
+        android:textColor="#AFAFAF"
+        android:visibility="gone"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="@+id/code_verification_desc_editText_id"
+        app:layout_constraintStart_toStartOf="@+id/code_verification_desc_editText_id"
+        app:layout_constraintTop_toBottomOf="@+id/code_verification_desc_editText_id" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/code_verification_next_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/button_tow_background"
+        android:text="next"
+        android:textColor="#fff"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="@+id/code_verification_counter_textView_id"
+        app:layout_constraintStart_toStartOf="@+id/code_verification_counter_textView_id"
+        app:layout_constraintTop_toBottomOf="@+id/code_verification_counter_textView_id" />
+
+    <TextView
+        android:id="@+id/code_verification_resend_code_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="Resend Code"
+        android:textColor="#9B9B9B"
+        android:visibility="gone"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/code_verification_next_button_id"
+        app:layout_constraintStart_toStartOf="@+id/code_verification_next_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/code_verification_next_button_id" />
+
+    <ProgressBar
+        android:id="@+id/code_verification_otp_code_progressBar_id"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+</androidx.constraintlayout.widget.ConstraintLayout>

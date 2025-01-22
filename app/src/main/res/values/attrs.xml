@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="typeface">
+            <enum name="Light" value="0" />
+            <enum name="LightItalic" value="1" />
+            <enum name="Regular" value="2" />
+            <enum name="RegularItalic" value="3" />
+            <enum name="SemiBold" value="4" />
+            <enum name="SemiBoldItalic" value="5" />
+            <enum name="Bold" value="6" />
+            <enum name="BoldItalic" value="7" />
+            <enum name="ExtraBold" value="8" />
+            <enum name="ExtraBoldItalic" value="9" />
+        </attr>
+        <!--<attr name="is_enabled" format="boolean" />-->
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <string-array name="fonts">
+        <item>Open Sans Light.ttf</item>
+        <item>Open Sans Light Italic.ttf</item>
+
+        <item>Open Sans.ttf</item>
+        <item>Open Sans Italic.ttf</item>
+
+        <item>Open Sans Semibold.ttf</item>
+        <item>Open Sans Semibold Italic.ttf</item>
+
+        <item>Open Sans Bold.ttf</item>
+        <item>Open Sans Bold Italic.ttf</item>
+
+        <item>Open Sans Extrabold.ttf</item>
+        <item>Open Sans Extrabold Italic.ttf</item>
+
+    </string-array>
+
+
+
+
+
+    <declare-styleable name="TintableImageView">
+        <attr name="tintColorStateList" format="reference|color" />
+    </declare-styleable>
+
+
+
+</resources>

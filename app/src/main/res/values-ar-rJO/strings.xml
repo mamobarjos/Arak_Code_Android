@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="app_name">أراك</string>
+
+    //map activity
+    <string name="Your_GPS">يبدو أن نظام تحديد المواقع العالمي (GPS) الخاص بك معطل ، هل تريد تمكينه؟</string>
+
+
+    <string name="title_home">الرئسية</string>
+    <string name="title_wallet">المحفظة</string>
+    <string name="title_Store">المتجر</string>
+    <string name="title_add">أضف اعلان</string>
+    <string name="title_arak_store">متجر ارك</string>
+    <string name="title_notifications">الأشعارات</string>
+    <string name="title_profile">الحساب</string>
+
+    <string name="AD">اعلان</string>
+
+    <!--registration activity-->
+    <string name="registration_activity_title">انضم الى اراك الأعلانية</string>
+    <string name="registration_activity_full_name">الأسم الكامل</string>
+    <string name="registration_activity_desc">سجل اليوم واستمتع بإضافة إعلاناتك ومتاجرك.</string>
+    <string name="registration_activity_Business_Name">الأسم التجاري (اختياري)</string>
+    <string name="registration_activity_email">البريد الالكتروني</string>
+    <string name="registration_activity_password">كلمة المرور</string>
+    <string name="registration_activity_Confirm_password">تأكيد كلمة المرور</string>
+    <string name="registration_activity_date_of_birth">تاريخ الميلاد</string>
+    <string name="registration_activity_phone_number">ادخل رقم الجوال</string>
+    <string name="registration_activity_Sign_up">انشاء حساب</string>
+    <string name="registration_activity_Terms">بالتسجيل ، فإنك توافق على الشروط والأحكام وسياسة الخصوصية الخاصة بنا.</string>
+    <string name="registration_activity_Login_Facebook">تسجيل الدخول بأستخدام فيسبوك</string>
+    <string name="registration_activity_have_wallet">هل لديك محفظة؟</string>
+    <string name="registration_activity_Login_gmail">تسجيل الدخول بأستخدام حساب قوقل</string>
+    <string name="registration_activity_Have_account">يوجد لديك حساب؟ تسجيل الدخول</string>
+    <string name="registration_activity_or">أو</string>
+    <string name="registration_activity_yes">نعم</string>
+    <string name="registration_activity_no">لا</string>
+
+    <!--login activity-->
+    <string name="login_activity_welcome">اهلا و سهلا</string>
+    <string name="login_activity_thousands_registered_members">انضم إلينا مجانًا وكن واحدًا من آلاف الأعضاء المسجلين</string>
+    <string name="login_activity_email">البريد الألكتروني</string>
+    <string name="login_activity_password">كلمة المرور</string>
+    <string name="login_activity_Login">تسجيل الدخول</string>
+    <string name="login_activity_Login_guest">تسجيل كزائر</string>
+    <string name="login_activity_Forget_password">هل نسيت كلمة الدخول؟</string>
+    <string name="login_activity_Login_Facebook">تسجيل الدخول باستخدام الفيسبوك</string>
+    <string name="login_activity_Login_Google">تسجيل الدخول باستخدام حساب قوقل</string>
+    <string name="login_activity_Sign_up">لا تمتلك حساب؟ حساب جديد</string>
+    <string name="login_activity_as_guest">تسجيل الدخول كزائر</string>
+
+    <!--settings activity-->
+    <string name="settings_activity_settings">الأعدادات</string>
+    <string name="settings_activity_General">عامة</string>
+    <string name="settings_activity_Notifications">الأشعارات</string>
+    <string name="settings_activity_Language">اللغة</string>
+    <string name="settings_activity_Feedback">اخبرنا في رأيك</string>
+    <string name="settings_activity_terms">الشروط و الاحكام</string>
+    <string name="settings_activity_About_us">عن أراك</string>
+    <string name="settings_activity_Need_Help">تحتاج مساعدة؟</string>
+    <string name="settings_activity_Legal">القضايا القانونية</string>
+    <string name="settings_activity_Privacy">الخصوصية</string>
+
+    <!--normal ads activity-->
+    <string name="normal_ads_activity_title">الاعلانات المدفوعة</string>
+
+    <!--user intrest avtivity-->
+    <string name="user_intrest_title">اختر اهتماماتك</string>
+
+    <!--home frag-->
+    <string name="home_search">البحث</string>
+    <string name="home_frag_search">ابحث عن مقاطع الفيديو والصور وغيرها الكثير</string>
+    <string name="home_frag_Watched_Ads">الإعلانات التي شاهدتها</string>
+    <string name="home_frag_learn_more">اعرف المزيد</string>
+    <string name="home_frag_featured_ads">إعلانات مميزة</string>
+    <string name="home_frag_See_more">عرض المزيد</string>
+    <string name="home_frag_Normal_ads">إعلانات عادية</string>
+    <string name="home_frag_Suggestions_Stores">اقتراحات المتاجر</string>
+    <string name="home_frag_filtration_options">خيارات البحث</string>
+    <string name="home_frag_electoral_district">الدائرة الانتخابية</string>
+    <string name="home_frag_electoral_candidates">المرشحين للانتخابات النيابية</string>
+
+    <!--wallet frag-->
+    <string name="wallet_frag_Earning">الايرادات</string>
+    <string name="wallet_frag_Withdraw">سحب نقدي</string>
+    <string name="wallet_frag_Make_An_Ad">انشاء اعلان</string>
+    <string name="wallet_frag_ACTIVITIES">الحركات</string>
+    <string name="wallet_frag_Enter_Coupon_Code">أدخل رمز القسيمة</string>
+    <string name="wallet_frag_From">من</string>
+    <string name="wallet_frag_To">الى</string>
+
+    <!--Cliq Activity-->
+    <string name="cliq_activity_title">كليك</string>
+    <string name="cliq_activity_add_attachment">إضافة مرفق</string>
+    <string name="cliq_activity_desc">الرجاء إدخال مبلغ التحويل</string>
+    <string name="cliq_activity_save">حفظ</string>
+    <string name="cliq_activity_text_copied">تم نسخ النص</string>
+    <string name="cliq_activity_no_text_to_copied">لا يوجد نص لنسخه</string>
+    <string name="cliq_activity_copied_Text">نص منسوخ</string>
+
+    <!--store frag-->
+    <string name="store_frag_Search_Stores">البحث في المتاجر</string>
+    <string name="store_frag_Search_in_Stores">ابحث عن احتياجاتك داخل المتاجر</string>
+
+    <!--service frag-->
+    <string name="service_frag_Arak_Service">خدمات أراك</string>
+    <string name="service_frag_Arak_Ranking">تصنيف أراك</string>
+
+    <!--no_internet_connection  activity-->
+    <string name="no_internet_connection_activity_title_label">لا يوجد اتصال بالإنترنت</string>
+    <string name="no_internet_connection_activity_desc_label">يرجى التحقق من اتصال جهازك</string>
+    <string name="no_internet_connection_activity_try_again_label">حاول ثانية</string>
+
+    <!--profile frag-->
+    <string name="profile_frag_My_Detail">الملف الشخصي</string>
+    <string name="profile_frag_My_Ads">اعلاناتي</string>
+    <string name="profile_frag_History">سجل المشاهدات</string>
+    <string name="profile_frag_My_Favorite">المفضلة</string>
+    <string name="profile_frag_My_Store">متجري</string>
+    <string name="profile_frag_My_Products">منتجاتي</string>
+    <string name="profile_frag_Change_Password">تغيير كلمة المرور</string>
+    <string name="profile_frag_Logout">تسجيل الخروج</string>
+
+    <!--MyDetail activity-->
+    <string name="My_Detail_activity_save_changes">حفظ التغييرات</string>
+
+    <!--change Phone Number activity-->
+    <string name="change_Phone_Number_activity_Reset_Phone_Number">إعادة تعيين رقم الهاتف</string>
+    <string name="change_Phone_Number_activity_Please_enter_New_Phone_Number">الرجاء إدخال رقم هاتفك الجديد</string>
+    <string name="change_Phone_Number_activity_Please_enter_Current_Phone_Number">الرجاء إدخال رقم هاتفك الحالي</string>
+    <string name="change_Phone_Number_activity_New_Phone_Number">رقم هاتف جديد</string>
+    <string name="change_Phone_Number_activity_Current_Phone_Number">رقم هاتف جديد الحالي</string>
+
+    <!--home activity-->
+    <string name="home_activity_Add_Store">أضف متجرك</string>
+    <string name="home_activity_home">الرئيسية</string>
+    <string name="home_activity_Wallet">المحفظة</string>
+    <string name="home_activity_Stores">المتاجر</string>
+    <string name="home_activity_Products">المنتجات</string>
+    <string name="home_activity_More">المزيد</string>
+
+    <!--forget password activity-->
+    <string name="forget_password_activity_Forget_Your_Password">نسيت كلمة المرور</string>
+    <string name="forget_password_activity_Reset_enter_email">رجاء أدخل رقم الهاتف</string>
+    <string name="forget_password_activity_Next">التالي</string>
+    <string name="forget_password_activity_Back">عودة</string>
+
+    <!--Code Verification activity-->
+    <string name="Code_Verification_activity_Almost_There">اوشكت على الأنتهاء!</string>
+    <string name="Code_Verification_activity_Please_enter_ottp_number">الرجاء إدخال رقم OTP. تم إرسال الرقم إلى هاتفك</string>
+    <string name="Code_Verification_activity_second_left">الثواني المتبقية</string>
+    <string name="Code_Verification_activity_Resend_Code">أعد إرسال الرمز</string>
+
+    <!--Ad Type activity-->
+    <string name="ad_type_activity_title">نوع الإعلان</string>
+
+
+    <!--ElectionDetailsActivity-->
+    <string name="election_details_activity_governorate">Governorate</string>
+    <string name="election_details_activity_electoral_district">Electoral District</string>
+    <string name="election_details_activity_bloc_membership">Bloc Membership</string>
+
+    <!--rest password activity-->
+    <string name="rest_password_activity_Change_Your_Password">غير كلمة المرور الخاصة بك</string>
+    <string name="rest_password_activity_enter_new_password">الرجاء إدخال كلمة مرور جديدة وتأكيد كلمة المرور</string>
+    <string name="rest_password_activity_Submit">متابعة</string>
+    <string name="rest_password_activity_confirm_password">تأكيد كلمة المرور</string>
+    <string name="rest_password_activity_current_password">كلمة مرور الحالية</string>
+    <string name="rest_password_activity_new_password">كلمة مرور الجديدة</string>
+
+    <!--Category Packages activity-->
+    <string name="Category_Packages_activity_Image_Ads">الإعلانات الصور</string>
+    <string name="Category_Packages_activity_Video_Ads">إعلانات الفيديو</string>
+    <string name="Category_Packages_activity_Website_Ads">إعلانات موقع الويب</string>
+    <string name="Category_Packages_activity_Stores">المتاجر</string>
+    <string name="Category_Packages_activity_Reach">يصل</string>
+    <string name="Category_Packages_activity_Image">صورة</string>
+    <string name="Category_Packages_activity_JOD">د.أ</string>
+    <string name="Category_Packages_activity_Seconds">ثواني</string>
+    <string name="Category_Packages_activity_Custom_Package">حزمة مخصصة</string>
+    <string name="Category_Packages_activity_Special_Service">حدد الحزمة الخاصة بك وقم بإنشاء إعلانك</string>
+
+    <!--Create New Ad activity-->
+    <string name="Create_New_Ad_activity_Individual">فردي</string>
+    <string name="Create_New_Ad_activity_Company">شركة</string>
+    <string name="Create_New_Ad_activity_Title">عنوان الأعلان</string>
+    <string name="Create_New_Ad_activity_Company_Name">أسم الشركة</string>
+    <string name="Create_New_Ad_activity_Description">وصف الأعلان</string>
+    <string name="Create_New_Ad_activity_Location">الموقع</string>
+    <string name="Create_New_Ad_activity_Continue">متابعة</string>
+    <string name="Create_New_Ad_activity_Upload_Image">تحميل الصور</string>
+    <string name="Create_New_Ad_activity_Upload_Video">تحميل الفيديو</string>
+    <string name="Create_New_Ad_activity_Back_To_Ads">العودة للأعلانات</string>
+    <string name="Create_New_Ad_activity_Website">الموقع الألكتروني</string>
+    <string name="Create_New_Ad_activity_Special">مميز</string>
+
+    <!--main store activity-->
+    <string name="Create_store_activity_My_Store">متجري</string>
+    <string name="Create_store_activity_Add_product">إضافة منتج</string>
+    <string name="Create_store_activity_My_Products">منتجاتي</string>
+
+    <!--New Ad Summery activity-->
+    <string name="Summery_activity_Summery">ملخص</string>
+    <string name="Summery_activity_cart_details">تفاصيل الحزمة</string>
+    <string name="Summery_activity_total_amount">المبلغ الإجمالي</string>
+
+    <!--Details Cart activity-->
+    <string name="Details_Cart_activity_title">تفاصيل المنتج</string>
+    <string name="Details_Cart_activity_Choose_Type">اختر النوع:</string>
+    <string name="Details_Cart_activity_Quantity">الكمية:</string>
+    <string name="Details_Cart_activity_buyButton">اشترِ الآن</string>
+
+
+    <!--cart activity-->
+    <string name="cart_activity_Special_title">السلة</string>
+    <string name="cart_activity_Special_note">ملاحظة خاصة</string>
+    <string name="cart_activity_note">أضف ملاحظتك للطلب</string>
+    <string name="cart_activity_payment_summary">ملخص الدفع</string>
+    <string name="cart_activity_cart_total">إجمالي السلة</string>
+    <string name="cart_activity_discount">خصم</string>
+    <string name="cart_activity_tax">ضريبة</string>
+    <string name="cart_activity_total_amount">المبلغ الإجمالي</string>
+    <string name="cart_activity_Place_order">إتمام الطلب</string>
+
+    <!--Shipping Address activity-->
+    <string name="ShippingAddress_activity_title">عنوان الشحن</string>
+    <string name="ShippingAddress_activity_First_Name">الاسم الأول</string>
+    <string name="ShippingAddress_activity_Last_Name">اسم العائلة</string>
+    <string name="ShippingAddress_activity_address">العنوان</string>
+    <string name="ShippingAddress_activity_Choose_Payment">اختر طريقة الدفع:</string>
+    <string name="ShippingAddress_activity_Place_Order">إتمام الطلب</string>
+
+
+    <!--payment activity-->
+    <string name="payment_activity_check_out">الدفع</string>
+    <string name="payment_activity_My_Wallet">محفظتي</string>
+    <string name="payment_activity_Card">بطاقة إئتمان</string>
+    <string name="payment_activity_Ads_Type">نوع الاعلانات</string>
+    <string name="payment_activity_Number">العدد</string>
+    <string name="payment_activity_Time">الزمن</string>
+    <string name="payment_activity_Video">فيديو</string>
+    <string name="payment_activity_Balance_Not_Enough">الرصيد غير كافي</string>
+    <string name="payment_activity_continue_with_credit">هل ترغب في الاستمرار في بأستخدام البطاقة الأتمانية؟</string>
+
+    <!--Success Activity-->
+    <string name="Success_activity_Success">نجاح!</string>
+    <string name="Success_activity_changed_successfully">تم تغيير كلمة المرور الخاصة بك بنجاح!</string>
+    <string name="Success_activity_Continue_to_Profile">متابع إلى الحساب الشخصي</string>
+
+    <!--withdraw Activity-->
+    <string name="withdraw_activity_Withdraw">سحب نقدي</string>
+    <string name="withdraw_activity_Amount">المبلغ</string>
+    <string name="withdraw_activity_Wallet_Type">اختر المحفظة أو البنك</string>
+
+    <!--Ranking Activity-->
+    <string name="Ranking_activity_Ranking">تصنيف</string>
+    <string name="Ranking_activity_Arak_Ranking">تصنيفات اراك</string>
+    <string name="Ranking_activity_Arak_Video">مشاهدة الفيديو</string>
+    <string name="Ranking_activity_Arak_Image">مشاهدة الصور</string>
+    <string name="Ranking_activity_Arak_Website">مشاهدة الويب</string>
+    <string name="Ranking_activity_Arak_Total">إجمالي الإيرادات</string>
+
+    <!--ad story Activity-->
+    <string name="ad_story_activity_Learn_More">معرفة المزيد</string>
+
+    <!--my ads Activity-->
+    <string name="my_ads_activity_page_title">اعلاناتي</string>
+    <string name="my_ads_activity_Ads_Type">نوع الأعلان</string>
+    <string name="my_ads_activity_Reach">الوصول</string>
+    <string name="my_ads_activity_Number">عدد الصور</string>
+    <string name="my_ads_activity_Time">الوقت</string>
+    <string name="my_ads_activity_Price">السعر</string>
+    <string name="my_ads_activity_Date">التاريخ</string>
+    <string name="my_ads_highlight_ad">تمييز هذا الإعلان</string>
+    <string name="my_ads_delete">حذف</string>
+    <string name="my_ads_edit">تعديل</string>
+    <string name="my_ad_details_activity">مشاهدة</string>
+
+    <!--ad details Activity-->
+    <string name="ad_details_phone_number">رقم الهاتف</string>
+
+    <!--history Activity-->
+
+    <!--map Activity-->
+    <string name="map_activity_confirm">تأكيد</string>
+
+    <!--favorites Activity-->
+
+    <!--custom package activity-->
+    <string name="custom_package_activity_Number_Reach">عدد الوصول</string>
+    <string name="custom_package_activity_Number_Image">عدد الصور</string>
+    <string name="custom_package_activity_Number_Seconds">عدد الثواني</string>
+    <string name="custom_package_activity_Gender">الجنس</string>
+    <string name="custom_package_activity_Country">الدولة</string>
+    <string name="custom_package_activity_City">المدينة</string>
+    <string name="custom_package_activity_Total">المجموع:</string>
+
+    <!--notification activity-->
+    <string name="notification_activity_page_title">الأشعارات</string>
+
+    <!--feedback activity-->
+    <string name="feedback_activity_feedback">اخبرنا في رايك عن التطبيق</string>
+    <string name="feedback_activity_inter_your_feedback">الرجاء إدخال ملاحظاتك هنا</string>
+
+    <!--store profile activity-->
+    <string name="store_profile_activity_member_since">عضو منذ </string>
+    <string name="store_profile_activity_enter_Review">يرجى كتابة التقييم!</string>
+    <string name="store_profile_activity_rate_store">يرجى تقييم المتجر</string>
+
+    <!--Create New product activity-->
+    <string name="Create_New_product_activity_Create_product">انشاء منتج</string>
+    <string name="Create_New_product_activity_product_name">اسم المنتج</string>
+    <string name="Create_New_product_activity_Price">السعر</string>
+    <string name="Create_New_product_activity_Discount_value">قيمة الخصم</string>
+    <string name="Create_New_product_activity_create">انشاء</string>
+    <string name="store_profile_activity_My_Products">منتجاتي</string>
+    <string name="store_profile_activity_Store_Products">منتجات المتجر</string>
+    <string name="store_profile_activity_Store_Reviews">المراجعات</string>
+    <string name="store_profile_activity_Add_Review">إضافة تقييم</string>
+    <string name="store_profile_activity_Enter_review">أدخل رأيك ...</string>
+    <string name="store_profile_activity_Arak">أراك</string>
+
+    <!--Create store activity-->
+    <string name="Create_store_activity_Store_name">اسم المتجر</string>
+    <string name="Create_store_activity_facebook">فيسبوك</string>
+    <string name="Create_store_activity_Instagram">انستغرام</string>
+    <string name="Create_store_activity_Twitter">تويتر</string>
+    <string name="Create_store_activity_LinkedIn">لينكدان</string>
+    <string name="Create_store_activity_Snapchat">سناب شات</string>
+    <string name="Create_store_activity_Youtube">يوتيوب</string>
+
+    <!--product activity-->
+    <string name="Create_store_activity_Related_Products">منتجات ذات صله</string>
+    <string name="Create_store_activity_View_All">مشاهدة الكل</string>
+    <string name="Create_store_activity_Review">مراجعة</string>
+    <string name="Create_store_activity_Social_media_accounts">حسابات وسائل التواصل الاجتماعي</string>
+    <string name="Create_store_activity_Enter_Review">أدخل رأيك لمزود الخدمة هذا ...</string>
+    <string name="Create_store_activity_Visit_Store">قم بزيارة المعرض او المتجر</string>
+    <string name="favorite_button_description">أضف إلى المفضلة</string>
+    <string name="share_button">زر المشاركة</string>
+    <string name="back_button">زر الرجوع</string>
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--error messages-->
+    <string name="error_messages_insert_your_current_password">الرجاء إدخال كلمة المرور الحالية الخاصة بك</string>
+    <string name="error_messages_insert_your_new_password">الرجاء إدخال كلمة المرور الجديدة الخاصة بك</string>
+    <string name="error_messages_insert_confirm_your_new_password">يرجى تأكيد كلمة المرور الجديدة الخاصة بك</string>
+    <string name="error_messages_no_data_found">لم يتم العثور على نتائج</string>
+
+    <!--dialogs-->
+    <string name="dialogs_Uploading_wait">جاري التحميل .. الرجاء الانتظار...</string>
+    <string name="dialogs_Uploading_Sending">جاري الارسال الرجاء الانتظار ...</string>
+    <string name="dialogs_Select_Picture">اختيار صورة</string>
+    <string name="dialogs_receive_payment">سوف تتلقى الدفع في غضون 48 ساعة</string>
+    <string name="dialogs_Back_to_wallet">العودة إلى المحفظة</string>
+    <string name="dialogs_Success">نجاح</string>
+    <string name="dialogs_confirm">حسنا</string>
+    <string name="dialogs_alert">تنبيه</string>
+    <string name="dialogs_Contact_Info">معلومات الاتصال</string>
+    <string name="dialogs_advisors_intro_title">تفاصيل الخدمة</string>
+    <string name="dialogs_advisors_contact_you">بمجرد اكتمال التفاصيل أدناه ، سيتصل بك أحد المستشارين الخبراء لدينا</string>
+    <string name="dialogs_advisors_intro">حوّل أفكارك إلى مقاطع فيديو ورسوم متحركة مميزة لجميع المنصات الاجتماعية وإدارتها وتطوير البرمجيات وغيرها الكثير من
+       الخدمات التسويقية المساندة للحملات الاعلانية التي نقدمها. \n \n
+من خلال المتابعة سيقوم احد الموظفين في القسم المختص بهذه الخدمة بالتواصل معك في اقرب وقت.</string>
+    <string name="dialogs_Enter_Full_Name">أدخل الاسم الكامل</string>
+    <string name="dialogs_Enter_Phone_Number">أدخل رقم الهاتف</string>
+    <string name="dialogs_Enter_email">أدخل بريدك الإلكتروني</string>
+    <string name="dialogs_Send">إرسال</string>
+    <string name="dialogs_Continue">متابعة</string>
+    <string name="dialogs_loading_wait">جاري التحميل انتظر من فضلك...</string>
+    <string name="dialogs_ad_post_soon">سيتم نشر إعلانك قريبا.</string>
+    <string name="dialogs_store_created_successfully">تم إنشاء متجرك بنجاح.</string>
+    <string name="dialogs_Product_created_successfully">تم إنشاء منتجك بنجاح.</string>
+    <string name="dialogs_Go_My_Ads">اذهب إلى إعلاناتي</string>
+    <string name="dialogs_Go_My_Store">الذهاب الى متجري</string>
+    <string name="dialogs_Go_My_Products">انتقل إلى منتجاتي</string>
+    <string name="dialogs_Payment_combined">الدفع المدمج</string>
+    <string name="dialogs_Payment_combined_desc">في هذا النوع ، يتم الجمع بين الدفع باستخدام المحفظة وبطاقة الائتمان. هل ترغب في الاستمرار؟</string>
+    <string name="dialogs_Payment_Available_Coupons">القسائم المتوفرة</string>
+    <string name="dialogs_Payment_Use">شحن</string>
+    <string name="dialogs_Payment_purchase_coupon">يرجى الاتصال بنا لشراء قسيمة</string>
+    <string name="dialogs_delete_this_entry">هل أنت متأكد أنك تريد حذف التقييم؟</string>
+    <string name="dialogs_Delete_entry">حذف التقييم</string>
+    <string name="dialogs_Delete_Product">حذف المنتج</string>
+    <string name="dialogs_sure_to_delete_ad">هل أنت متأكد أنك تريد حذف هذا الأعلان؟</string>
+
+    <string name="dialogs_sure_to_delete_product">هل أنت متأكد أنك تريد حذف هذا المنتج؟</string>
+    <string name="dialogs_cancel">الغاء</string>
+    <string name="dialogs_error">خطاء</string>
+    <string name="dialogs_Social_media_links">روابط وسائل التواصل الاجتماعي</string>
+
+    <!--toast messages-->
+    <string name="toast_please_try_again_later">فضلاً معاودة المحاولة في وقت لاحق</string>
+    <string name="toast_please_Insert_valid_email_address">الرجاء إدخال عنوان بريد إلكتروني صالح</string>
+    <string name="toast_Passwords_not_match">نعتذر كلمة المرور الخاصة بك لا تتطابق</string>
+    <string name="toast_Select_Your_Gender">الرجاء تحديد جنسك</string>
+    <string name="toast_Insert_full_name">الرجاء إدخال اسمك الكامل</string>
+    <string name="toast_Insert_email">الرجاء إدخال البريد الإلكتروني الخاص بك</string>
+    <string name="toast_Insert_password">الرجاء إدخال كلمة المرور الخاصة بك</string>
+    <string name="toast_Insert_product_price">الرجاء إدخال سعر المنتج</string>
+    <string name="toast_Insert_confirm_password">الرجاء إدخال تأكيد كلمة المرور الخاصة بك</string>
+    <string name="toast_Insert_phone_number">الرجاء إدخال رقم هاتفك</string>
+    <string name="toast_fill_all_required_fields">يرجى ملء جميع الحقول المطلوبة</string>
+    <string name="toast_check_password_email">يرجى التحقق من كلمة المرور الخاصة بك أو البريد الإلكتروني</string>
+    <string name="toast_password_length">يجب أن تتكون كلمة مرورك من 6 أحرف أو أكثر</string>
+    <string name="toast_Created_successfully_waiting_review">تم الإنشاء بنجاح ، في انتظار المراجعة</string>
+    <string name="toast_Payment_failure">فشل الدفع ، فضلاً المحاولة مرة أخرى!</string>
+    <string name="toast_Insert_requested_amount">الرجاء إدخال المبلغ المطلوب</string>
+    <string name="toast_Insert_full_phone_number">الرجاء إدخال رقم هاتفك بالكامل</string>
+    <string name="toast_minimum_amount_withdrawal">معذرة الحد الادنى للسحب 3 دنانير</string>
+    <string name="toast_please_enter_OTP_Code">فضلاً ادخل رمز التحقق المرسل لرقم جوالك</string>
+    <string name="toast_Thank_you">شكرًا لك</string>
+    <string name="toast_Phone_Number_updated_successfully">تم تحديث رقم هاتفك بنجاح</string>
+    <string name="toast_Password_updated_successfully">لقد تم تحديث كلمة السر الخاصة بك بنجاح</string>
+    <string name="toast_Insert_requested_promo_code">الرجاء إدخال الرمز الشحن الخاص بك</string>
+    <string name="toast_charged_successfully">تم شحن رصيدك بنجاح</string>
+    <string name="toast_check_promo_code">يرجى التحقق من الرمز الترويجي الخاص بك وحاول مرة أخرى</string>
+    <string name="toast_insert_company_name">الرجاء إدخال اسم شركتك</string>
+    <string name="toast_check_phone_number">يرجى التحقق من رقم هاتفك</string>
+    <string name="toast_add_media_post">الرجاء إضافة بعض الوسائط إلى منشورك</string>
+    <string name="toast_fill_out_fields">يرجى ملئ الحقول</string>
+    <string name="toast_sorry_cant_open_map">آسف لا يمكنك فتح الخريطة</string>
+    <string name="toast_uploaded_successfully">تم الرفع بنجاح</string>
+    <string name="toast_Failed_upload_Image">فشل تحميل الصورة</string>
+    <string name="toast_no_selected_Image">لم يتم تحمير صورة</string>
+    <string name="toast_cant_upload_more_the_one_videos">آسف ، لا يمكنك تحميل المزيد من مقاطع الفيديو</string>
+    <string name="toast_sorry_your_video_must_not_longer">آسف يجب أن لا يكون الفيديو الخاص بك أطول من</string>
+    <string name="toast_second">ثانية</string>
+    <string name="toast_havent_picked_Image">لم تختر الصورة</string>
+    <string name="toast_unable_current_location">غير قادر على الحصول على الموقع الحالي</string>
+    <string name="toast_please_set_location_map">يرجى تحديد موقعك على الخريطة</string>
+    <string name="toast_complete_rating">يرجى إكمال التقييم قبل الإرسال</string>
+    <string name="toast_cant_upload_more">آسف ، لا يمكنك تحميل أكثر من </string>
+    <string name="toast_cant_upload_more_one_Video">آسف ، لا يمكنك تحميل أكثر من فيديو</string>
+    <string name="toast_images"> صور </string>
+    <string name="toast_check_website_url">فضلاً تأكد من عنوان الموقع الالكتروني</string>
+    <string name="toast_Thank_You">شكرا لك</string>
+    <string name="toast_phone_number_registered">آسف رقم الهاتف هذا مسجل بالفعل</string>
+    <string name="toast_sure_your_code_correct">يرجى التأكد من صحة الكود الخاص بك</string>
+    <string name="toast_cant_complete_request">عذرا ، لا يمكن استكمال طلبك في هذه الأثناء</string>
+    <string name="toast_sure_your_code_correct_and_phone_number_not_registered">يرجى التأكد من صحة الرمز الخاص بك وأن رقم هاتفك غير مسجل من قبل</string>
+    <string name="toast_sorry_advertiser_doset_address">هذا المعلن ليس له موقع فعلي</string>
+    <string name="toast_sorry_advertiser_doset_website">هذا المعلن ليس له موقع الكتروني</string>
+    <string name="toast_website_not_valid">عذرا موقع المعلن غير صالح</string>
+    <string name="toast_login_with_account">يتطلوب هذا الإجراء تسجيل الدخول باستخدام حساب</string>
+    <string name="toast_Facebook_link_not_valid">عذرا رابط الفيسبوك غير صالح</string>
+    <string name="toast_instagram_link_not_valid">عذرا رابط انستغرام غير صالح</string>
+    <string name="toast_Twitter_link_not_valid">عذرا رابط تويتر غير صالح</string>
+    <string name="toast_linkedin_link_not_valid">عذرا رابط لينكد إن غير صالح</string>
+    <string name="toast_Snapchat_link_not_valid">عذرا رابط سناب شات غير صالح</string>
+    <string name="toast_youtube_link_not_valid">عذرا رابط يوتيوب غير صالح</string>
+    <string name="toast_required_information">يرجى تقديم كافة المعلومات المطلوبة</string>
+    <string name="toast_Type_store_name">الرجاء كتابة اسم المتجر</string>
+    <string name="toast_Type_store_description">الرجاء كتابة وصف المتجر</string>
+    <string name="toast_Type_store_valid_website">الرجاء إدخال موقع ويب صالح</string>
+    <string name="toast_Type_store_phone_number">الرجاء كتابة رقم هاتف المتجر</string>
+    <string name="toast_Type_store_cover_Image">يرجى تعيين صورة غلاف المتجر</string>
+    <string name="toast_Type_store_profile_Image">يرجى تعيين صورة ملف تعريف المتجر</string>
+    <string name="toast_Type_store_location">يرجى تحديد موقع المتجر</string>
+
+</resources>

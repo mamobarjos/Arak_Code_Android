@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arakadds.arak">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/larg_arak_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Arak"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".presentation.activities.stores.MainStoreProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="nosensor"/>
+
+        <activity
+            android:name=".presentation.activities.authentication.ChooseInterestsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.CustomPackage.CustomPackageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ArakStore.ThankYouActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ArakStore.ShippingAddressActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ArakStore.ProductDetailsToCartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ArakStore.CartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtJjD9Pnvd8x592yo5A5q9BW1wOUmP18c" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- تم إزالة العنصر المكرر وإبقاء العنصر الصحيح -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7303745888048368~8949417589" />
+
+        <activity
+            android:name=".presentation.activities.other.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activities.ads.VideoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activities.chat.ChatActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ChatActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.settings.NotificationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.AdDetailUserViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.AdsStoryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.CategoryPackagesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.CreateNewAdActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.DisplayFullScreenImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.MyAdsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.NewAdSummeryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.SearchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.SelectAdCategoryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.SelectAdsTypeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.SpecialAdsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.authentication.CodeVerificationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.authentication.ForgetPasswordActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.authentication.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.authentication.RegistrationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.authentication.ResetPasswordActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.home.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.map.MapActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.other.BaseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.other.NoInternetConnectionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="nosensor"
+            />
+        <activity
+            android:name=".presentation.activities.other.SuccessActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.other.WebViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.payments.PaymentOptionsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.payments.PaymentWebActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.profile.HistoryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.profile.MyDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.profile.MyFavoritesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.profile.MyProductsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.services.ArakServicesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.services.RankingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.settings.AboutInformationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.settings.FeedBackActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.settings.SettingsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.stores.CreateProductActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.stores.CreateStoreActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.stores.ProductDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.stores.StoreProductsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.stores.StoreProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.payments.wallet.CashWithdrawActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.payments.wallet.WalletPaymentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.NormalAdsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.election.ElectionDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.payments.CliqPaymentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.services.ServicesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.ads.MyAdDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".presentation.activities.other.ReviewsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label=""
+            android:screenOrientation="nosensor"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".common.fcm.FirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/messagePart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="40dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/image_holder_virtical"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/_10sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImageViewMessage"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_holder_virtical"
+                    android:visibility="visible" />
+
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/tv_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/fontFamilyStyle"
+            android:layout_toLeftOf="@id/tv_time"
+            android:background="@drawable/bg_chat_you"
+            android:maxWidth="@dimen/_170sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="hi"
+            android:textColor="@color/orange"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/fontFamilyStyle"
+        android:layout_below="@+id/messagePart"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+       android:textAlignment="textEnd"
+     android:layout_alignParentEnd="true"
+        android:text="5:04pm"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp" />
+</RelativeLayout>
